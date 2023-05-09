@@ -1,0 +1,30 @@
+{
+  "name": "restuarant-page",
+  "version": "1.0.0",
+  "repository": {
+   "url": "git+https://github.com/Yuseph03/bakery-page.git"
+  },
+  "description": "A dynamically rendered bakery website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "server": "node server.js",
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Yuseph03",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "express": "^4.18.2",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.2",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-middleware": "^6.0.1",
+    "webpack-dev-server": "^4.13.1"
+  }
+}

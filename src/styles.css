@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Cursive';
+  src: url('./CedarvilleCursive-Regular.ttf') format('ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-image: url(images/yuhan-du-unsplash.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#head {
+  display: flex;
+  background-color: #2b2d31ee;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2em;
+  padding: 1em;
+  max-height: 180px;
+}
+
+#main-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+  font-family: 'Cursive';
+
+  font-size: 75px;
+  font-weight: 550;
+  text-shadow:  4px 4px 3px #0098D4;
+}
+
+.head-navbar {
+  display: flex;
+  font-family: 'Cursive';
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+  height: min-content;
+
+  font-size: 35px;
+}
+
+ul li {
+  margin-left: 0.5em;
+}
+
+ul li:hover {
+  border-bottom: solid 3px #0098D4;
+  margin-top: -5px;
+}
+
+#content {
+  background-color: #36393eca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  margin: auto;
+  padding: 3em;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+#content p {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+#baker {
+  width: 60%;
+  border-radius: 8em;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #2b2d31ee;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  height: 30px;
+  gap: 10px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.fa-github {
+  width: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+ 
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #2b2d31ee; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1f1f1f; 
+}
+
+
+/* MENU */
+
+.menu {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 1em;
+}
+
+.menu-item {
+background-color: #1b1d1fac;
+padding: 2em;
+}
+
+.menu-item:hover {
+background-color: #2c303578;
+}
+
+.menu-item p:nth-child(2) {
+font-weight: bolder;
+font-size: 19px;
+}
+
+.menu img {
+width: 50%;
+}
+
+/* CONTACT */
+
+.map-pic {
+width: 100%;
+}
+
+.text-column p {
+text-align: left;
+font-size: 19px;
+}
